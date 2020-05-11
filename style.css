@@ -1,0 +1,47 @@
+body {
+    background-image: url('img/img.jpg');
+    img max-width: 100%;
+    max-height: 500px;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: auto;
+    height: 40vh;
+    text-align: center;
+    font-family: arial, 'Electrolize', sans-serif;
+    font-style: oblique;
+}
+
+a {
+    color: beige;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: tan;
+    color: beige;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    list-style: none;
+    color: whitesmoke;
+}
+
+.site-title {
+    color: beige;
+}
+
+.site-subtitle {
+    color: beige;
+}
