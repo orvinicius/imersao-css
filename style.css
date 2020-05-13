@@ -95,9 +95,8 @@ a:hover {
 
 section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
-    text-align: center;
     background-image: none;
     background-color: black;
 }
@@ -105,12 +104,12 @@ section {
 .titulo {
     font-style: oblique;
     color: beige;
-    padding: 50px 0 50px 0;
+    padding: 40px 0;
 }
 
 .img-portfolio {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     margin: 15px 0 0 0;
     border-radius: 50%;
 }
