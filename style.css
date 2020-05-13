@@ -9,7 +9,9 @@
 body {
     background-image: url('img/img.jpg');
     background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     height: 100vh;
+    font-family: 'PT Mono', monospace;
     font-size: 10px;
 }
 
@@ -57,18 +59,21 @@ header {
 .menu a {
     display: block;
     padding: 10px 20px;
+    background: black;
+    color: beige;
 }
 
 a {
     color: beige;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 a:hover {
     background-color: beige;
     color: black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .site-title,
@@ -83,33 +88,85 @@ a:hover {
     /*define largura total da página*/
     width: 100vw;
     padding: 50px;
-    color: whitesmoke;
-    text-align: center;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1em;
 }
 
 .site-subtitle {
+    font-family: 'Baloo Chettan 2', cursive;
     font-style: italic;
 }
 
-section {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-image: none;
-    background-color: black;
+.info {
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.5em;
 }
 
-.titulo {
+.portifolio {
+    background-image: none;
+    background-color: black;
+    padding: 1em;
+    height: 100vh 100vw;
+}
+
+.portifolio h2 {
+    font-family: 'Baloo Chettan 2', cursive;
     font-style: oblique;
+    font-size: 3em;
     color: beige;
-    padding: 40px 0;
+    margin-bottom: 1em;
+    text-align: start;
+}
+
+.portifolio .grid {
+    display: grid;
+    gap: 2em;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+@media (min-width: 560px) {
+    .portifolio .grid {
+        grid-template-columns: 200px 200px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 880px) {
+    .portifolio .grid {
+        font-size: 1em;
+        /*Cria 3 vezes o valor da coluna*/
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+    }
+}
+
+.portifolio figure {
+    text-align: center;
+}
+
+.grid a {
+    background-color: black;
+    color: beige;
+    border-radius: 50px;
 }
 
 .img-portfolio {
-    height: 80px;
-    width: 80px;
-    margin: 15px 0 0 0;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: right bottom;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.img-portfolio:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
 }

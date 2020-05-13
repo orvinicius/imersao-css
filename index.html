@@ -6,36 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinícius Rodrigues</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&family=Gloria+Hallelujah&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="https://twitter.com/Vini_orodrigues" target="_blank">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/viniciusrodrigues03/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/orvinicius/" target="_blank">Github</a></li>
+                <li><a class="fa fa-twitter" href="https://twitter.com/Vini_orodrigues" target="_blank">&nbsp;Twitter</a></li>
+                <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/viniciusrodrigues03/" target="_blank">&nbsp;LinkedIn</a></li>
+                <li><a class="fa fa-github" href="https://github.com/orvinicius/" target="_blank">&nbsp;GitHub</a></li>
             </ul>
         </nav>
         <div class="box">
             <h1 class="site-title">Vinícius Rodrigues</h1>
             <h2 class="site-subtitle">Jr. Front-end developer</h2>
-            <p>
-                Estudante de mecatrônica que ao conhecer a programação, se apaixonou pelo ramo e está tentando se desenvolver nesta área! Visitem os links do menu para mais informações! :D
+            <p class="info">
+                Estudante de Mecatrônica e Engenharia Mecânica que ao conhecer o ramo da programação, se apaixonou e está tentando se desenvolver nesta área!
             </p>
         </div>
     </header>
-    <section>
-        <h2 class="titulo">Portifólio</h2>
-        <figure>
-            <img class="img-portfolio" src="./img/senai.jpg" alt="Senai" title="Senai">
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/mecatronica.jpg" alt="Mecatrônica" title="Mecatrônica">
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/unisal.jpg" alt="Unisal" title="Unisal">
-        </figure>
+    <section class="portifolio">
+        <h2>Projetos</h2>
+        <div class="grid">
+            <figure>
+                <img class="img-portfolio" src="./img/senai.jpg" alt="Senai" title="Senai">
+                <figcaption>SENAI<br>(Mecatrônica)</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/unisal.jpg" alt="Unisal" title="Unisal">
+                <figcaption>Engenharia Mecânica</figcaption>
+            </figure>
+            <figure>
+                <a href="http://mitsubishielectric.com.br/meca2020/" target="_blank">
+                    <img class="img-portfolio" src="./img/mecatronica.jpg" alt="Mecatrônica" title="Mecatrônica">
+                </a>
+                <figcaption>MECA 2020<br>(Competidor)</figcaption>
+            </figure>
+            <figure>
+                <a href="https://www.hamburgadadobem.com.br/" target="_blank">
+                    <img class="img-portfolio" src="./img/hb.jpg" alt="Unisal" title="Hamburgada do Bem">
+                </a>
+                <figcaption>Projeto Social<br>(Voluntário)</figcaption>
+            </figure>
+        </div>
     </section>
 </body>
 
