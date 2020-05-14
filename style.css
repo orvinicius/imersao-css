@@ -146,6 +146,24 @@ a:hover {
     }
 }
 
+@media (min-width: 1200px) {
+    .portifolio .grid {
+        font-size: 1em;
+        /*Cria 3 vezes o valor da coluna*/
+        grid-template-columns: repeat(4, 250px);
+        justify-content: center;
+    }
+    .img-portfolio {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: right bottom;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+    }
+}
+
 .portifolio figure {
     text-align: center;
 }
