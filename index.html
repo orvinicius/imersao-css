@@ -13,51 +13,69 @@
 <body>
 
     <header>
-        <nav class="menu">
+        <nav class="menu container">
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre"><i class="fas fa-basketball-ball bola"></i>Sobre</a></li>
+                <li><a href="#projetos"><i class="fas fa-basketball-ball bola"></i>Projetos</a></li>
+                <li><a href="#contato"><i class="fas fa-basketball-ball bola"></i>Contato</a></li>
             </ul>
         </nav>
         <div class="spin">
         </div>
-        <div class="box" id="sobre">
+        <div class="box">
             <h1 class="site-title">Vinícius Rodrigues</h1>
             <h2 class="site-subtitle">Jr. Front-end developer</h2>
-            <div class="info">
-                <p class="paragrafo">
-                    Estudante de Mecatrônica e Engenharia Mecânica que ao conhecer o ramo da programação, se apaixonou e está tentando se desenvolver nesta área!
-                </p>
-            </div>
         </div>
     </header>
-    <section class="portifolio" id="projetos">
-        <h2>Projetos</h2>
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="profile">
+            <img src="https://pbs.twimg.com/profile_images/1261367032840441862/kUI2C750_400x400.jpg" alt="Vinícius Rodrigues">
+        </figure>
+
+        <p>
+            Olá! eu me chamo Vinícius, tenho 21 anos, moro em Hortolândia e atualmente trabalho como estagiário em Mecatrônica na empresa Benteler Automotive e curso a faculdade de Engenharia Mecânica, além do técnico em Mecatrônica.
+        </p>
+        <p>
+            Sou formado em Mecânica de Manutenção pelo Senai Campinas e tenho Técnico em ADM pela ETEC de Hortolândia. Estou sempre disposto a buscar conhecimento em novas áreas e sou apaixonado por futebol e basquete.
+        </p>
+        <p>
+            Você já deve ter percebido que minhas escolhas são bem aleatórias, e o estudo de desenvolvimento Web é só mais uma dessas demonstrações (kkk). Após conhecer o ramo da programação, percebi que levava jeito para a mesma e estou buscando me aperfeiçoar nessa
+            quarentena, para quem sabe seguir na área e me tornar um ótimo profissional.
+        </p>
+        <p>
+            Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css" target="_blank">Imersão
+                CSS da Alura</a>. A plataforma de aprendizagem disponibilizou o curso gratuito por meio da comunidade DEV "Hipsters" e proporcionou a muitas pessoas a oportunidade de se desenvolver no mundo do Front-end.
+        </p>
+
+    </section>
+    <section class="portifolio container" id="projetos">
+        <h2>Projetos e Cursos</h2>
         <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="./img/senai.jpg" alt="Senai" title="Senai">
+            <figure class="card-front">
+                <img class="img-portfolio" src="./img/senai.jpg" alt="Senai">
                 <figcaption>SENAI<br>(Mecatrônica)</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/unisal.jpg" alt="Unisal" title="Unisal">
+                <img class="img-portfolio" src="./img/unisal.jpg" alt="Unisal">
                 <figcaption>Engenharia Mecânica</figcaption>
             </figure>
             <figure>
                 <a href="http://mitsubishielectric.com.br/meca2020/" target="_blank">
-                    <img class="img-portfolio" src="./img/mecatronica.jpg" alt="Mecatrônica" title="Mecatrônica">
+                    <img class="img-portfolio" src="./img/mecatronica.jpg" alt="Mecatrônica">
                 </a>
                 <figcaption>MECA 2020<br>(Competidor)</figcaption>
             </figure>
             <figure>
                 <a href="https://www.hamburgadadobem.com.br/" target="_blank">
-                    <img class="img-portfolio" src="./img/hb.jpg" alt="Unisal" title="Hamburgada do Bem">
+                    <img class="img-portfolio" src="./img/hb.jpg" alt="Unisal">
                 </a>
                 <figcaption>Projeto Social<br>(Voluntário)</figcaption>
             </figure>
         </div>
     </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
         <h2>Contato</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/orvinicius">
