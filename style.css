@@ -39,7 +39,7 @@
     .menu {
         background-color: black;
         color: beige;
-        width: 100vw;
+        width: 100vw 100vh;
         position: fixed;
         top: 0;
         z-index: 1;
